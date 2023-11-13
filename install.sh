@@ -17,8 +17,7 @@ unzip RobotoMono.zip -d ~/.local/share/fonts/
 
 fc-cache -fv
 
-wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.10.0-rc4-1/alacritty_0.10.0-rc4-1_amd64_bullseye.deb
-sudo dpkg -i alacritty_0.10.0-rc4-1_amd64_bullseye.deb
+sudo apt install alacritty -y 
 sudo apt install -f
 
 git clone https://www.github.com/Airblader/i3 i3-gaps
