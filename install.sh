@@ -28,10 +28,14 @@ cd ../..
 
 pip3 install pywal
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/compton
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/tmux
+cp .config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 cp .config/i3/config ~/.config/i3/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
@@ -41,7 +45,13 @@ cp .fehbg ~/.fehbg
 cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
 cp -r .wallpaper ~/.wallpaper 
 
+tmux source ~/.config/tmux/tmux.conf
+
 echo "Done! Grab some wallpaper and run pywal -i filename to set your color scheme. To have the wallpaper set on every boot edit ~.fehbg"
+sleep 2
 echo "After reboot: Select i3 on login, run lxappearance and select arc-dark"
+sleep 2
+echo "remember to install tmux plugin with prefix + I"
+sleep 2
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
