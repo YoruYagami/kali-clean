@@ -37,7 +37,7 @@ mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/tmux
 cp .config/tmux/tmux.conf ~/.config/tmux/tmux.conf
 cp .config/i3/config ~/.config/i3/config
-cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp .config/rofi/config ~/.config/rofi/config
